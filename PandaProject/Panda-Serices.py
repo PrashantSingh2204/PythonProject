@@ -9,8 +9,8 @@ nameList=pd.Series(names)
 # # Find the total values , size , etc basic know how of the day
 # # Do some stats - min , mid , max ,meagan , var , std etc
 
-#SalesData=pd.read_excel("E:\PythonProject\PandaProject\Data\sales_revenue.xlsx")
-#print(SalesData)
+SalesData=pd.read_excel("PandaProject/Data/sales_revenue.xlsx")
+print(SalesData)
 # revenueData=SalesData["Sales Revenue"]
 # print("Revenue Data :",revenueData)
 # print("Revenue Data Total:",revenueData.sum())
@@ -25,7 +25,7 @@ nameList=pd.Series(names)
 
 #############################################################################
 
-iphoneSalesData=pd.read_excel("E:\PythonProject\PandaProject\Data\iphone_sales_data.xlsx")
+iphoneSalesData=pd.read_excel("PandaProject/Data/iphone_sales_data.xlsx")
 #print(iphoneSalesData)
 condition=(iphoneSalesData["Sales_Channel"] =="Online") & (iphoneSalesData["Sales_Region"] == "Asia Pacific")
 print(iphoneSalesData[condition]["Quantity_Sold"].sum())
